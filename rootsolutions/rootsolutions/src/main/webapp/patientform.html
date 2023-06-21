@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="patientform.css">
+    <link rel="stylesheet" href="css/all.css">
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Patient Form</div>
+        <form id="patient_form" class="input-group" method="post" action="patientform"> 
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Patient Id</span>
+                    <input type="text" placeholder="Enter Patient Id" name="pt_id" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Patient Name</span>
+                    <input type="text" placeholder="Enter Patient Name" name="pt_name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Age</span>
+                    <input type="text" placeholder="Enter Patient Age" name="pt_age" required>
+                </div>
+               
+             
+                <div class="input-box">
+                    <span class="details">Histroy </span>
+                    <input type="text" placeholder="Enter Patient  Histroy" name="pt_history" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Date</span>
+                    <input type="date" name="reg_date">
+                </div>
+                <div class="input-box">
+                    <span class="details">Sugar</span>
+                    <input type="text" placeholder="Enter Sugar Reading(mg/dL)" name="sugar" >
+                  
+
+                </div>
+                <div class="input-box">
+                    <span class="details">Blood Pressure</span>
+                    <input type="text" placeholder="Enter Blood Pressure Reading(mmHg)" name="bp">
+
+                </div>
+                <div class="input-box">
+                    <span class="details">Pulse Rate</span>
+                    <input type="text" placeholder="Enter Pulse Rate(beats per min)" name="pulserate" >
+ 
+                </div>
+             </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" value="Male" id="dot-1" >
+                <input type="radio" name="gender" value="Female" id="dot-2" >
+                <input type="radio" name="gender" value="Others" id="dot-3" >
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender" >Male</span>
+                    </label>
+                    <label for="dot-2" >
+                        <span class="dot two"></span>
+                        <span class="gender" >Female</span>
+                    </label>
+                    <label for="dot-3" name ="gender">
+                        <span class="dot three"></span>
+                        <span class="gender" >others</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

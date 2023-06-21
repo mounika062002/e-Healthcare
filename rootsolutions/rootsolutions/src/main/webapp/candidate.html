@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login and registration form</title>
+        <link rel="stylesheet" href="candidate.css">
+        <link rel="stylesheet" href="css/all.css">
+        
+    </head>
+    <body>
+        <div class="hero">
+          <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+               <button type="button" class="toggle-btn" onclick="login()">log in</button>
+               <button type="button" class="toggle-btn" onclick="register()">register</button>
+             </div>           
+         
+       <form id="login" class="input-group" action="candidatelogin" method="post">
+           <i class="fa-solid fa-envelope"></i>
+           <input type="text" class="input-field" placeholder="E-mail" required name="email">
+           <i class="fa fa-key"></i>
+           <input type="text" class="input-field" placeholder="Password" required name="password">
+          
+              <i  id="hide1" class="fa-solid fa-eye" ></i>
+              <i id="hide2" class="fa-solid fa-eye-slash" ></i> 
+           
+         
+           <input type="checkbox" class="check-box"><span>Remember Password</span>
+           <button type="submit" class="submit-btn">login</button>   
+         </form>
+         
+       
+        <form id="register" class="input-group" method="post" action="candidateregister">
+          <input type="text" class="input-field" placeholder="Name" name= "name"required>
+          <input type="text" class="input-field" placeholder="Phone no" name= "phoneno" required>
+          <input type="text" class="input-field" placeholder="Mail id" name="mailid"required>
+          <input type="text" class="input-field" placeholder="Password" name = "password" required>
+          <input type="text" class="input-field" placeholder="Address" name="address"required>
+          <input type="text" class="input-field" placeholder="pincode" name= "pincode"required>
+          
+           <select class="district" name="district">
+             
+              <option>select a district</option>
+              <filter>
+              <option> Adilabad</option>
+              <option> Bhandari kothagudem</option>
+			  <option> Hanumakonda</option>
+              <option> Hyderabad</option>
+              <option> Jagtial</option>
+              <option> Jangon</option>
+			  <option> Jayashankar Bhupalapally</option>
+			  <option> Jogulamba Gadwal</option>
+			  <option> Kamareddy</option>
+              <option> Karimnagar</option>
+              <option> Khammam</option>
+			  <option> Kumuram Bheem</option>
+			  <option> Mahabubabad</option>
+			  <option> Mahabubnagar</option>
+			  <option> Mancherial</option>
+              <option> Medak</option>
+			  <option> Medchal-Malkajgiri</option>
+			  <option> Mulugu</option>
+			  <option> Nagarkurnool</option>
+              <option> Nalgonda</option>
+			  <option> Narayanpet</option>
+			  <option> Nirmal</option>
+              <option> Nizamabad</option>
+			  <option> Peddapalli</option>
+			  <option> Rajanna Sircilla</option>
+              <option> Rangareddy</option>
+              <option> Sangareddy</option>
+              <option> Siddipet</option>
+			  <option> Suryapet</option>
+			  <option> Vikarabad</option>
+              <option> Wanaparthy</option>
+              <option> Warangal</option>
+              <option> Yadari Bhuvanagiri</option>
+              </filter>
+
+           </select>
+           <select class="district" name="identity">
+            <option>select Identity</option>
+            <option>Citizen</option>
+            <option>Employee</option>
+            <option>Volunteer</option>
+            </select>
+            <div>
+              <input type="radio" id="contactChoice1"
+               name="gender" value="Male">
+              <label for="contactChoice1">Male</label>
+          
+              <input type="radio" id="contactChoice2"
+               name="gender" value="Female">
+              <label for="contactChoice2">Female</label>
+          
+              <input type="radio" id="contactChoice3"
+               name="gender" value="Others">
+              <label for="contactChoice3">Others</label>
+            </div>
+            <br>
+            
+            
+           
+            <button type="submit" class="submit-btn">register</button> 
+           
+          </div>  
+        </form>
+       </div>
+       
+      </div>
+      
+        <script>
+          var x=document.getElementById("login");
+          var y=document.getElementById("register");
+          var z=document.getElementById("btn");
+
+          function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+          }
+          
+          function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+          }
+        </script>
+    </body>
+</html>
