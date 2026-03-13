@@ -47,16 +47,11 @@ Please note that additional configuration steps may be required depending on you
 
 Contributions to the E-Healthcare System project are welcome! If you find any issues or have ideas for improvements, please feel free to submit a pull request or open an issue in the GitHub repository.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
 We would like to express our gratitude to the open-source community for their valuable contributions and support.
 
-## Contact
 
-For any inquiries or further information, please contact [project_email@example.com].
 
 Thank you for your interest in the E-Healthcare System project! We hope it proves to be a valuable tool in the medical field.
